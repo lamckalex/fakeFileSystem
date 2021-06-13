@@ -15,7 +15,6 @@ let currentPath = '';
 console.log('Welcome');
 
 rl.question("What is your user ID ? Hit enter if you don't have one \n", (input) => {
-    input = '0b45d32d-df67-48d3-a0ec-6af3535873ef' //DEBUG
     if(input){
         userID = input;
         question();
@@ -164,7 +163,7 @@ function question(){
                     ['mkdir', '{folderName}', 'Creates a folder'],
                     ['rmdir', '{folderName}', 'Removes a folder'],
                     ['cd', '{pathName}', 'Navigates to a path'],
-                    ['pwd', '', 'Prints current Path']
+                    ['pwd', '', 'Prints current Path'],
                     ['exit', '', 'Exits the program gracefully'],
                     ['help', '', 'Prints help'],
                 ]
